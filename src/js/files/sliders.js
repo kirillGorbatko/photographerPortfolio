@@ -27,13 +27,38 @@ function initSliders() {
 
 	// Перечень слайдеров
 	if (document.querySelector('.mainSlider')) {
-		new Swiper('.mainSlider', {
+		const mainSlider = new Swiper('.mainSlider', {
+			modules: [Navigation, Pagination],
+
 			observer: true,
 			observeParents: true,
+			loop: true,
 			slidesPerView: 2.2,
 			spaceBetween: 20,
-			autoHeight: true,
 			speed: 800,
+			navigation: {
+				nextEl: '.main-slider__arrow',
+			},
+
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					autoHeight: true,
+					spaceBetween: 5,
+				},
+				768: {
+					slidesPerView: 1.7,
+					spaceBetween: 20,
+				},
+				1200: {
+					slidesPerView: 2.2,
+				},
+			},
+
+			pagination: {
+				el: '.main-slider__dotts',
+				clickable: true,
+			},
 		});
 	}
 }
