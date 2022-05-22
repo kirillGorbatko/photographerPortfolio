@@ -1,6 +1,7 @@
 .aside {
-	min-height: 100vh;
+	position: relative;
 
+	min-height: 100vh;
 	background: $white;
 
 	@media screen and (max-width: $tablet) {
@@ -13,6 +14,12 @@
 
 		width: 100%;
 		height: 100%;
+
+		transition: transform 0.3s ease 0s;
+
+		.menu-open & {
+			transform: translateX(0);
+		}
 	}
 
 	// .aside__body
