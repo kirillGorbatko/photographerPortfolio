@@ -5,35 +5,39 @@
 		</a>
 		<ul data-spollers class="aside__list">
 			<li class="aside__item">
-				<a href="../index.html" class="aside__link">Home</a>
+				<a href="../index.html" class="aside__link @@if(link==='index'){_active}">Home</a>
+			</li>
+			</li>
+			<li class="aside__item">
+				<a href="./about.html" class="aside__link @@if(link==`about`){_active}">About</a>
 			</li>
 			<li class="aside__item">
 				<div data-spoller class="aside__link aside__link--spoller">Portfolio</div>
 				<ul class="aside__sublist">
 					<li class="aside__subitem">
-						<a href="" class="aside__sublink">Wedding</a>
+						<a href="./protest.html" class="aside__sublink @@if(link==`protest`){_active}">Protests</a>
 					</li>
 					<li class="aside__subitem">
-						<a href="" class="aside__sublink">Wedding</a>
+						<a href="./fashion.html" class="aside__sublink @@if(link==`fashion`){_active}">Fashion</a>
 					</li>
 					<li class="aside__subitem">
-						<a href="" class="aside__sublink">Wedding</a>
+						<a href="./collages.html" class="aside__sublink @@if(link==`collages`){_active}">Collages</a>
+					</li>
+					<li class="aside__subitem">
+						<a href="./culture.html" class="aside__sublink @@if(link==`culture`){_active}">Ukrainian culture</a>
+					</li>
+					<li class="aside__subitem">
+						<a href="./studio.html" class="aside__sublink @@if(link==`studio`){_active}">Studio</a>
 					</li>
 				</ul>
-			</li>
-			<li class="aside__item">
-				<a href="../about.html" class="aside__link">About</a>
-			</li>
-			<li class="aside__item">
-				<div class="aside__item__contacts">
-					<a href="mailto:kirill.gorbatko@icloud.com" v class="aside__item__contacts__item">
-						<img src="../img/icons/mailIcon.svg" alt="" class="aside__item__contacts__img">
-					</a>
-					<a href="https://www.instagram.com/" target="_blank" class="aside__item__contacts__item">
-						<img src="../img/icons/instIcon.svg" alt="" class="aside__item__contacts__img">
-					</a>
-				</div>
-			</li>
 		</ul>
+		<div class="aside__contacts">
+			<a href="mailto:kirill.gorbatko@icloud.com" target="_blank" class="aside__contact">
+				<img src="../img/icons/email.svg" alt="Icon email">
+			</a>
+			<a href="https://www.instagram.com/" target="_blank" class="aside__contact">
+				<img src="../img/icons/instagram.svg" alt="Icon instagram">
+			</a>
+		</div>
 	</div>
 </aside>

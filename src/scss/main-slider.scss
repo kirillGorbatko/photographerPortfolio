@@ -27,6 +27,12 @@
 		width: 40px;
 		height: 40px;
 
+		transition: opacity 0.3s ease 0s;
+		&:hover,
+		&:focus {
+			opacity: 0.6;
+		}
+
 		@media screen and (max-width: $mobile) {
 			display: none;
 		}
@@ -59,6 +65,11 @@
 			transition: background-color 0.3s ease 0s;
 
 			&.swiper-pagination-bullet-active {
+				background-color: $white;
+			}
+
+			&:hover,
+			&:focus {
 				background-color: $white;
 			}
 		}
