@@ -82,7 +82,7 @@ body {
 	}
 }
 
-.main-slider {
+.column {
 	@media screen and (min-width: $tablet) {
 		flex: 0 1 75%;
 	}
@@ -155,3 +155,28 @@ body {
 // Подключение стилей отдельных страниц
 @import "home";
 @import "about";
+
+//========================================================================================================================================================
+
+.grid {
+	@include adaptiveValue("padding-left", 40, 20);
+	@include adaptiveValue("padding-right", 40, 20);
+	@include adaptiveValue("padding-top", 80, 40);
+	@include adaptiveValue("padding-bottom", 80, 40);
+	// .grid__list
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 4rem;
+	}
+	// .grid__item
+	&__item {
+	}
+	// .grid__img
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}

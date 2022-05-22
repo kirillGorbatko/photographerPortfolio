@@ -8,9 +8,11 @@
 	<div class="wrapper">
 		<main class="page">
 			<div class="page__wrapper">
-				@@include('html/_aside.htm',{})
+				@@include('html/_aside.htm',{"link":"index"})
 				@@include('html/_header.htm',{})
-				@@include('html/_main-slider.htm',{})
+				<div class="column">
+					@@include('html/_main-slider.htm',{})
+				</div>
 			</div>
 	</div>
 	</main>
