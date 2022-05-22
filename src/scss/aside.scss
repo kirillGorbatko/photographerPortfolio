@@ -1,0 +1,129 @@
+.aside {
+	flex: 0 0 320px;
+	min-height: 100vh;
+
+	@media screen and (max-width: $tablet) {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		// transform: translateX(-100%);
+
+		width: 100%;
+		height: 100%;
+	}
+
+	// .aside__body
+	&__body {
+		@include adaptiveValue("padding-top", 80, 40);
+		@include adaptiveValue("padding-bottom", 80, 40);
+		@include adaptiveValue("padding-left", 40, 20);
+		@include adaptiveValue("padding-right", 40, 20);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		overflow: auto;
+	}
+
+	// .aside__logo
+	&__logo {
+		display: block;
+		@include adaptiveValue("width", 200, 150);
+		@include adaptiveValue("height", 200, 150);
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .aside__img
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	// .aside__list
+	&__list {
+	}
+
+	// .aside__item
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+
+	// .aside__link
+	&__link {
+		position: relative;
+
+		display: inline-block;
+		padding: 4px 0;
+		font-size: 20px;
+
+		cursor: pointer;
+		color: $black;
+
+		&._active {
+			cursor: default;
+			pointer-events: none;
+
+			&::before {
+				transform: scale(1, 1);
+			}
+		}
+
+		&--spoller {
+			display: flex;
+			align-items: center;
+
+			&::after {
+				content: "";
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-left: 10px;
+
+				transform: rotate(90deg);
+				background: url("../img/icons/p-right.svg") center no-repeat;
+
+				transition: transform 0.3s ease 0s;
+			}
+
+			&._spoller-active {
+				&::after {
+					transform: rotate(-90deg);
+				}
+			}
+		}
+	}
+
+	// .aside__sublist
+	&__sublist {
+		margin-top: 20px;
+	}
+
+	// .aside__subitem
+	&__subitem {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	// .aside__sublink
+	&__sublink {
+		position: relative;
+
+		display: inline-block;
+		padding: 4px;
+
+		color: $black;
+		font-size: 16px;
+	}
+}
