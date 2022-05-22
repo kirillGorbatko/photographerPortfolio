@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Home"
+})
+
+<body>
+    <div class="wrapper">
+        <main class="page">
+            <div class="page__wrapper">
+                @@include('html/_aside.htm',{})
+                <div class="about">
+                    <div class="about__image">
+                        <img src="../img/about/01.jpeg" alt="">
+                    </div>
+                    <div class="about__text">
+                        <p class="about__text__title">Anna Chumakova</p>
+                        <p class="about__text__subtitle">Ukrainian photographer based in Cracow.</p>
+                        <p class="about__text__description">I am a visual artist open to crazy photo ideas.</p>
+                        <p class="about__text__description"> My favourite
+                            type of work is fashion shooting
+                            and creating bright, eye-catching photo collages.</p>
+                        <p class="about__text__description"> I also create calm and minimalistic photo
+                            shoots in the studio. </p>
+                        <p class="about__text__description">In addition, I am fond of photojournalism, partial to talk
+                            about
+                            social topics through photos.</p>
+                        <div class="contacts__block">
+                            <a href="mailto:kirill.gorbatko@icloud.com" v class="contacts__block__item">
+                                <img src="../img/icons/mailIcon.svg" alt="" class="contacts__block__item__img">
+                                anna.chumakova@gmail.com</a>
+                            <a href="https://www.instagram.com/" target="_blank" class="contacts__block__item">
+                                <img src="../img/icons/instIcon.svg" alt="" class="contacts__block__item__img">
+                                anna.chumakova</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

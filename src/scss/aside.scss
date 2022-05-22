@@ -66,6 +66,17 @@
 		&:not(:last-child) {
 			margin-bottom: 40px;
 		}
+		&__contacts{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+		
+				&__item{
+					display: flex;
+					align-items: center;
+				}
+			
+		}
 	}
 
 	// .aside__link
