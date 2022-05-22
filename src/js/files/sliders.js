@@ -1,7 +1,7 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 // Базовые стили
-import 'swiper/css';
+import "../../scss/base/swiper.scss";
 
 // Добавление классов слайдерам
 // swiper главному блоку, swiper-wrapper оболочке, swiper-slide для слайдов
@@ -30,7 +30,7 @@ function initSliders() {
 		new Swiper('.mainSlider', {
 			observer: true,
 			observeParents: true,
-			slidesPerView: 4,
+			slidesPerView: 2.2,
 			spaceBetween: 20,
 			autoHeight: true,
 			speed: 800,
