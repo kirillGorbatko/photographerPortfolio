@@ -9,39 +9,11 @@
 		<main class="page">
 			<div class="page__wrapper">
 				@@include('html/_aside.htm',{})
-				<div class="main-slider">
-					<div class="main-slider__body mainSlider">
-						<ul class="main-slider__swiper">
-							<li class="main-slider__slide">
-								<div class="main-slider__img">
-									<img src="./img/collages/01.jpg" alt="Home page photo 1">
-								</div>
-							</li>
-							<li class="main-slider__slide">
-								<div class="main-slider__img">
-									<img src="./img/collages/02.jpg" alt="Home page photo 2">
-								</div>
-							</li>
-							<li class="main-slider__slide">
-								<div class="main-slider__img">
-									<img src="./img/collages/03.jpg" alt="Home page photo 3">
-								</div>
-							</li>
-							<li class="main-slider__slide">
-								<div class="main-slider__img">
-									<img src="./img/collages/04.jpg" alt="Home page photo 4">
-								</div>
-							</li>
-							<li class="main-slider__slide">
-								<div class="main-slider__img">
-									<img src="./img/collages/05.jpg" alt="Home page photo 5">
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
+				@@include('html/_header.htm',{})
+				@@include('html/_main-slider.htm',{})
 			</div>
-		</main>
+	</div>
+	</main>
 	</div>
 	@@include('html/_js.htm',{})
 </body>
