@@ -1,27 +1,3 @@
 //====================================================================================================
-.footer{
-    // &__container{
-    //     width: 100%;
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    // }
 
-    &__block{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 5px 0 5px 0;
-
-        &__item{
-            display: flex;
-            align-items: center;
-
-            &__img{
-                margin-right: 10px;
-            }
-        }
-    }
-    
-}
 //====================================================================================================
