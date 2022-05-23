@@ -213,6 +213,17 @@
 				transform: translateX(0);
 			}
 		}
+
+		&._active {
+			cursor: default;
+			pointer-events: none;
+
+			color: $white;
+
+			&::before {
+				transform: translateX(0);
+			}
+		}
 	}
 
 	// .aside__contacts
