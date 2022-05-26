@@ -1,4 +1,6 @@
 // Импорт функционала ==============================================================================================================================================================================================================================================================================================================================
+// import { isMobile } from "./functions.js";
+// import { formsModules } from "./forms/forms.js";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox.css";
 
@@ -14,7 +16,7 @@ window.onload = function () {
 	window.setTimeout(function () {
 		document.body.classList.add('loaded');
 		document.body.classList.remove('loaded_hiding');
-	}, 1000);
+	}, 1500);
 
 
 

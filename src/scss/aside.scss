@@ -236,44 +236,22 @@
 	}
 
 	&__contact {
-		position: relative;
-
 		display: block;
-		width: 35px;
-		height: 35px;
-		padding: 5px;
-
-		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-
-			width: 100%;
-			height: 100%;
-			border-radius: 50%;
-
-			background-color: $black;
-			transform: scale(0);
-			transition: transform 0.3s ease 0s;
-		}
+		width: 25px;
+		height: 25px;
 
 		img {
 			display: block;
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
-			transition: filter 0.3s ease 0s;
+			transition: transform 0.3s ease 0s;
 		}
 
 		&:hover,
 		&:focus {
 			img {
-				filter: invert(100%);
-			}
-
-			&::before {
-				transform: scale(1);
+				transform: scale(1.1);
 			}
 		}
 	}
