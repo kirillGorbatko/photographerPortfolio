@@ -6,12 +6,14 @@
 
 	height: 90px;
 	padding: 20px 0;
+
 	// .header__container
 	&__container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
+	
 	// .header__logo
 	&__logo {
 		display: block;
