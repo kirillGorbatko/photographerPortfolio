@@ -33,8 +33,8 @@ function initSliders() {
 			observer: true,
 			observeParents: true,
 			loop: true,
-			slidesPerView: 2.2,
-			spaceBetween: 20,
+			slidesPerView: 3,
+			spaceBetween: 10,
 			speed: 800,
 			navigation: {
 				nextEl: '.main-slider__arrow',
@@ -45,13 +45,16 @@ function initSliders() {
 					slidesPerView: 1,
 					autoHeight: true,
 					spaceBetween: 5,
+					slidesPerGroup: 1,
 				},
 				768: {
-					slidesPerView: 1.7,
+					slidesPerView: 2,
 					spaceBetween: 20,
+					slidesPerGroup: 2,
 				},
 				1200: {
-					slidesPerView: 2.2,
+					slidesPerView: 3,
+					slidesPerGroup: 3,
 				},
 			},
 

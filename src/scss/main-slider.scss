@@ -28,8 +28,7 @@
 		height: 40px;
 
 		transition: opacity 0.3s ease 0s;
-		&:hover,
-		&:focus {
+		&:hover {
 			opacity: 0.6;
 		}
 
@@ -68,8 +67,7 @@
 				background-color: $white;
 			}
 
-			&:hover,
-			&:focus {
+			&:hover {
 				background-color: $white;
 			}
 		}
